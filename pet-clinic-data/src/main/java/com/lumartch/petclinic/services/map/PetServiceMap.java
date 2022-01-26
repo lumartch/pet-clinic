@@ -2,10 +2,12 @@ package com.lumartch.petclinic.services.map;
 
 import com.lumartch.petclinic.model.Pet;
 import com.lumartch.petclinic.services.PetService;
+import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
-public abstract class PetServiceMap extends AbstractMapService<Pet, Long> implements PetService {
+@Service
+public class PetServiceMap extends AbstractMapService<Pet, Long> implements PetService {
 
     @Override
     public Set<Pet> findAll() {
