@@ -1,11 +1,11 @@
 package com.lumartch.petclinic.services.map;
 
 import com.lumartch.petclinic.model.Vet;
-import com.lumartch.petclinic.services.CrudService;
+import com.lumartch.petclinic.services.VetService;
 
 import java.util.Set;
 
-public abstract class VetServiceMap extends AbstractMapService<Vet, Long> implements CrudService<Vet, Long> {
+public class VetServiceMap extends AbstractMapService<Vet, Long> implements VetService {
 
     @Override
     public Set<Vet> findAll() {
